@@ -1,0 +1,66 @@
+/* Full-screen container */
+.door-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black; /* Prevent white flicker */
+    z-index: 100;
+}
+
+/* Base Door Style */
+.door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+}
+
+/* Left & Right Doors with Different Layers */
+.left-door-1, .left-door-2, .left-door-3, .left-door-4, .left-door-5, .left-door-6 {
+    left: 0;
+    background-color: rgb(232, 60, 212);
+    transform-origin: left center;
+}
+
+.right-door-1, .right-door-2, .right-door-3, .right-door-4, .right-door-5, .right-door-6 {
+    right: 0;
+    background-color: rgb(50, 50, 154);
+    transform-origin: right center;
+}
+
+/* Decreasing Opacity */
+.left-door-2, .right-door-2 { opacity: 0.85; }
+.left-door-3, .right-door-3 { opacity: 0.7; }
+.left-door-4, .right-door-4 { opacity: 0.55; }
+.left-door-5, .right-door-5 { opacity: 0.4; }
+.left-door-6, .right-door-6 { opacity: 0.25; }
+
+/* Animations */
+@keyframes openLeft {
+    0% { transform: translateX(0) rotateY(0deg); }
+    100% { transform: translateX(-105%) rotateY(-10deg); }
+}
+
+@keyframes openRight {
+    0% { transform: translateX(0) rotateY(0deg); }
+    100% { transform: translateX(105%) rotateY(10deg); }
+}
+
+/* Apply Different Delays for a Smooth Cascade */
+.left-door-1 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0s; }
+.left-door-2 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0.1s; }
+.left-door-3 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0.2s; }
+.left-door-4 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0.3s; }
+.left-door-5 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0.4s; }
+.left-door-6 { animation: openLeft 1.2s ease-out forwards; animation-delay: 0.5s; }
+
+.right-door-1 { animation: openRight 1.2s ease-out forwards; animation-delay: 0s; }
+.right-door-2 { animation: openRight 1.2s ease-out forwards; animation-delay: 0.1s; }
+.right-door-3 { animation: openRight 1.2s ease-out forwards; animation-delay: 0.2s; }
+.right-door-4 { animation: openRight 1.2s ease-out forwards; animation-delay: 0.3s; }
+.right-door-5 { animation: openRight 1.2s ease-out forwards; animation-delay: 0.4s; }
+.right-door-6 { animation: openRight 1.2s ease-out forwards; animation-delay: 0.5s; }
+

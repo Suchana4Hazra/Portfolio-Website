@@ -1,0 +1,128 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.education {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: aqua; */
+    width: 100%;
+    min-height: 300px; /* Adjust as needed */
+}
+
+
+.heading {
+    font-size: 28px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.edu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%; /* Adjust width as needed */
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.edu-item {
+    background: rgb(139, 120, 120);
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(139, 74, 74, 0.6); /* Darker and more visible shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 8px 16px rgba(54, 210, 205, 0.5); /* More noticeable on hover */
+}
+
+.heading img {
+
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.heading img:hover {
+
+     transform: scale(1.03);
+}
+
+.iiests{
+
+    margin-top: 1.5rem;
+    width: 10%;
+    height: 10%;
+}
+.Sankrail{
+
+    /* border: 1px solid rgb(146, 101, 101); */
+    margin-top: 1.5rem;
+    width: 10%;
+    height: 15%;
+}
+
+.logo:hover{
+
+    transform: scale(1.5);
+
+}
+
+h2{
+
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+@media (max-width: 768px) and (max-width:303px) {
+
+    .edu-container{
+        flex-direction: column;
+    }
+    .edu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        max-width: 800px; /* Adjust width as needed */
+        margin: 0 auto;
+    }
+    
+    .edu-item {
+        background: rgb(139, 120, 120);
+        padding: 20px;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(139, 74, 74, 0.5); /* Darker and more visible shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .edu-item:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 8px 16px rgba(54, 210, 205, 0.5); /* More noticeable on hover */
+    }
+}

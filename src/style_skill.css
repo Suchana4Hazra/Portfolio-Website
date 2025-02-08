@@ -1,0 +1,77 @@
+/* .carousel {
+    overflow: hidden;
+    background: rgb(165, 115, 115);
+    height: auto;
+    min-height: 200px;      /* Set the height directly to control size 
+    padding: 30px 0;    /* Adjusted padding to reduce the height 
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-left 7s linear infinite;
+}
+
+.carousel-item {
+    min-width: 100px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 80px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Keyframes for continuous left scrolling 
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+} */
+
+
+.carousel {
+    overflow: hidden;
+    background: rgb(165, 115, 115, 0.5);
+    height: auto;
+    width: 100%;
+    min-height: 200px;      /* Set the height directly to control size */
+    padding: 30px 0;    /* Adjusted padding to reduce the height */
+    position: relative;
+    display: flex;           /* Flex container to center horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    margin-top: 50px;        /* Add margin to the top to give space above */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-left 7s linear infinite;
+}
+
+.carousel-item {
+    min-width: 100px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Keyframes for continuous left scrolling */
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

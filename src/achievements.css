@@ -1,0 +1,64 @@
+/* Achievements Section Styles */
+#achievements {
+    padding: 4rem 1rem;  /* Ample padding for spacing */
+    background-color: var(--second-bg-color);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card img {
+    width: 100%;  /* Ensures the image does not exceed card width */
+    max-height: 100px; /* Keeps the image contained */
+    object-fit: cover; /* Ensures proper cropping */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .achievements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,176 @@
+/* Floating color picker (Initially Hidden) */
+/*.color-picker {
+    position: fixed;
+    bottom: 8rem;
+    right: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colors per row 
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    opacity: 0; /* Initially Hidden 
+    transform: translateY(50px); /* Slightly moved down 
+    pointer-events: none; /* Prevent interaction when hidden 
+}
+
+/* Show when scrolled 
+.color-picker.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Color circles 
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: transform 0.2s ease;
+}
+
+/* Background colors 
+.color-option:nth-child(1) { background: #f5f5f5; } /* Light mode 
+.color-option:nth-child(2) { background: #312b2b; } /* Dark mode 
+.color-option:nth-child(3) { background: #ff6b6b; }
+.color-option:nth-child(4) { background: #6b8aff; }
+.color-option:nth-child(5) { background: #4caf50; }
+.color-option:nth-child(6) { background: #ff9800; }
+.color-option:nth-child(7) { background: #9c27b0; }
+.color-option:nth-child(8) { background: #cad439; } /* Brown */
+
+/* Hover effect 
+.color-option:hover {
+    transform: scale(1.2);
+}
+
+/* Theme variables 
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #201c1c;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}*/
+
+/* Floating container */
+.color-picker-container {
+    position: fixed;
+    bottom: 8rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Floating Circle Button */
+.color-picker-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* border: 2px solid #3b2727; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element stays inside */
+}
+
+/* Rotating Background Image */
+.color-picker-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/theme.png");
+    background-size: cover;
+    background-position: center;
+    animation: rotateInner 3s linear infinite;
+}
+
+/* Rotation Animation */
+@keyframes rotateInner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Floating color picker (Initially Hidden) */
+.color-picker {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none;
+}
+
+/* Show picker when active */
+.color-picker.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Color circles */
+.color-option {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #736c6c;
+    transition: transform 0.2s ease;
+}
+
+/* Background colors */
+.color-option:nth-child(1) { background: #f5f5f5; } /* Light mode */
+.color-option:nth-child(2) { background: #ce0b66; } /* Dark mode */
+.color-option:nth-child(3) { background: #ff6b6b; }
+.color-option:nth-child(4) { background: #6b8aff; }
+.color-option:nth-child(5) { background: #4caf50; }
+.color-option:nth-child(6) { background: #ff9800; }
+.color-option:nth-child(7) { background: #9c27b0; }
+.color-option:nth-child(8) { background: #cad439; }
+
+/* Hover effect */
+.color-option:hover {
+    transform: scale(1.5);
+}
+
+/* Theme variables
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #201c1c;
+} */
+
+/* body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+} */
+

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchana'a Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_portfolio.css">
+    <link rel="stylesheet" href="./style_skill.css">
+    <link rel="stylesheet" href="./style_experience.css">
+    <link rel="stylesheet" href="./style_contact.css">
+    <link rel="stylesheet" href="./style_footer.css">
+    <link rel="stylesheet" href="./style_color.css">
+    <link rel="stylesheet" href="./style_navBarResponsive.css">
+    <link rel="stylesheet" href="./style_homeResponsive.css">
+    <link rel="stylesheet" href="./style_education.css">
+    <link rel="stylesheet" href="./loading_style.css">
+</head>
+<body>
+
+
+    <div class="door-container">
+        <!-- Left Doors -->
+        <div class="door left-door-1"></div>
+        <div class="door left-door-2"></div>
+        <div class="door left-door-3"></div>
+        <div class="door left-door-4"></div>
+        <div class="door left-door-5"></div>
+        <div class="door left-door-6"></div>
+    
+        <!-- Right Doors -->
+        <div class="door right-door-1"></div>
+        <div class="door right-door-2"></div>
+        <div class="door right-door-3"></div>
+        <div class="door right-door-4"></div>
+        <div class="door right-door-5"></div>
+        <div class="door right-door-6"></div>
+    </div>
+    
+    
+
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        
+        <i class='bx bx-menu' id="menu"></i>
+
+        <nav class="navbar" id="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+     </header>
+
+
+     <!-- home section design -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello It's Me</h3>
+            <h1>Suchana Hazra</h1>
+            <h3>I'm a <span id="typing-text"></span></h3>
+            <p>👋 Hi, I'm Suchana, a B.Tech student in Computer Science & Technology at IIEST, Shibpur. Passionate about Cybersecurity, coding, and exploring new technologies. Always eager to learn, build, and innovate! 🚀</p>
+
+            <div class="social-media">
+                <a href="https://github.com/Suchana4Hazra"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/suchana-hazra-538166283"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            </div>
+
+            <a href="../documents/cv.pdf" class="btn" target="_blank">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="../images/myPicN.png" alt="">
+        </div>
+     </section>
+
+     <!-- about section design -->
+      <section class="about" id="about">
+        
+        <div class="about-img">
+            <h2 class="heading">About <span>Me</span></h2>
+            <img src="../images/about_mypic.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+
+            <p>I am a B.Tech student in Computer Science & Technology at IIEST, Shibpur. I have a deep passion for coding and love building innovative solutions by exploring new technologies.
+                 My curiosity drives me to experiment with different tech stacks and stay updated with the latest advancements.Beyond academics, I actively participate in coding challenges,
+                  technical discussions. I believe in continuous learning and enjoy collaborating with like-minded individuals to solve real-world problems.</p>
+            <p>Current Year of Study: <span>3rd year</span></p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+      </section>
+      
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Education</span>
+                <img src="../images/education_logo.png" alt="">
+            </h2>
+        
+            <div class="edu-container">
+                <div class="edu-item" id="iiests">
+                    <h3>B.Tech in Computer Science and Technology</h3>
+                    <h2>Indian Institute of Engineering Science and Technology, Shibpur</h2>
+                    <a href="https://www.iiests.ac.in/" target="_blank"> <!-- Replace with the actual link -->
+                        <img src="../images/iiests.png" class="Sankrail" alt="Sankrail School Logo">
+                    </a>
+                    <p><strong>CGPA:</strong> 9.72</p>
+                    <p><strong>Duration:</strong> 2022-2026</p>
+                </div>
+        
+                <div class="edu-item" id="Sankrail">
+                    <h3>Higher Secondary (WBCHSE)</h3>
+                    <h2>Sankrail Abhoy Chran High School</h2>
+                    <a href="https://schools.org.in/haora/19161319702/sankrail-abhay-charan-high-sch.html" target="_blank"> <!-- Replace with the actual link -->
+                        <img src="../images/sankrail_logo.png" class="Sankrail" alt="Sankrail School Logo">
+                    </a>
+                    <p><strong>Percentage:</strong> 96%</p>
+                    <p><strong>Year:</strong> 2022</p>
+                </div>
+
+                <div class="edu-item" id="Sankrail">
+                    <h3>Secondary (WBBSE)</h3>
+                    <h2>Sankrail Girls High School</h2>
+                    <a href="https://schools.org.in/haora/19161319704/sankrail-girls-high-school.html" target="_blank"> <!-- Replace with the actual link -->
+                        <img src="../images/sankrail_girls.jpg" class="Sankrail" alt="Sankrail School Logo">
+                    </a>
+                    <p><strong>Percentage:</strong> 95.3%</p>
+                    <p><strong>Year:</strong> 2020</p>
+                </div>
+            </div>
+        </section>
+        
+    
+
+      <!-- service section design -->
+       <!-- <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <h3>Web Development</h3>
+                <i class='bx bx-code-alt' ></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, facilis delectus? Libero eius, natus possimus numquam dolor adipisci quae vero nihil similique nostrum 
+                    sint ratione fuga quos dolores qui ipsam ut cum suscipit commodi.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <h3>Machine Learning</h3>
+                <i class='bx bx-data'></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, facilis delectus? Libero eius, natus possimus numquam dolor adipisci quae vero nihil similique nostrum 
+                    sint ratione fuga quos dolores qui ipsam ut cum suscipit commodi.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <h3>Cyber Security</h3>
+                <i class='bx bx-globe'></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, facilis delectus? Libero eius, natus possimus numquam dolor adipisci quae vero nihil similique nostrum 
+                    sint ratione fuga quos dolores qui ipsam ut cum suscipit commodi.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+       </section> -->
+
+       <!-- portfolio section design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span>
+            <img src="../images/project_logo.png" alt="">
+            </h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="../images/webDesign.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Chat Application
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Chat Application</h4>
+                        <p>A real-time chat application built with Node.js, Socket.io, and Express. 
+                            This application allows users to send and receive messages instantly, making it ideal for interactive communication. </p>
+                        <a href="https://github.com/Suchana4Hazra/chat-app.git"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="../images/calculator.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Calculator
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Calculator</h4>
+                        <p>A basic calculator app with a clean UI, built using simple JavaScript for smooth functionality. Designed for easy and efficient arithmetic operations.</p>
+                        <a href="https://suchana4hazra.github.io/Calculator/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>                
+
+                <div class="portfolio-box">
+                    <img src="../images/flower.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Flower Classification
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Flower Classification</h4>
+                        <p>A flower classification project built using Machine Learning, Python, and Streamlit. It predicts flower species based on input features, leveraging a trained ML model with an interactive and user-friendly interface.</p>
+                        <a href="https://flowerclassification-suchana16.streamlit.app/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="../images/diseases.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Multiple Diseases Detection
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Multiple Diseases Detection</h4>
+                        <p>A disease prediction system built using Machine Learning, Python, and Streamlit. It takes specific disease-related inputs and predicts the result with an interactive and user-friendly interface.</p>
+                        <a href="https://diseasesprediction-6meeahrgox9um7tp6f4rh5.streamlit.app/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-box">
+                    <img src="../images/timetable.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Timetable Generator
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Timetable Generator</h4>
+                        <p>A timetable generator built using Java, leveraging randomness to create optimized schedules. It automatically assigns subjects and time slots while ensuring a balanced distribution</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="../images/ticTacToe.jpeg" alt="">
+                    <!-- <div class="overlay-text">
+                        TicTacToe
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>TicTacToe</h4>
+                        <p>A simple Tic-Tac-Toe game with a clean UI, built using JavaScript. Players take turns marking the grid, with real-time win detection and a responsive design.</p>
+                        <a href="https://suchana4hazra.github.io/web_TicTacToe/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="../images/currency_converter.jpg" alt="">
+                    <!-- <div class="overlay-text">
+                        Timetable Generator
+                    </div> -->
+                    <div class="portfolio-layer">
+                        <h4>Currency Converter</h4>
+                        <p>A simple currency converter with a clean UI, built using JavaScript. It allows users to convert between different currencies with real-time calculations.</p>
+                        <a href="https://suchana4hazra.github.io/currency_converter/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skill section design -->
+        <h2 class="heading">My <span>Skills</span>
+            <img src="../images/skills.png" alt="">
+        </h2>
+        <section class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="../images/html.jpg" alt="HTML"></div>
+                <div class="carousel-item"><img src="../images/css.jpg" alt="CSS"></div>
+                <div class="carousel-item"><img src="../images/js.jpg" alt="JavaScript"></div>
+                <div class="carousel-item"><img src="../images/react.jpg" alt="React"></div>
+                <div class="carousel-item"><img src="../images/java.jpg" alt="Java"></div>
+                <div class="carousel-item"><img src="../images/python.jpg" alt="Python"></div>
+                <div class="carousel-item"><img src="../images/sql.jpg" alt="SQL"></div>
+            </div>
+        </section>
+
+        <!-- experience section design -->
+        <section class="experience" id="experience">
+            <h2 class="heading">My <span>Experience</span>
+            <img src="../images/exp_logo.webp" alt="">
+            </h2>
+        
+            <div class="experience-container">
+                <!-- Amazon Experience -->
+                <div class="experience-box" id="amazon">
+                    <h3>Amazon</h3>
+                    <p class="role">AFE SDE Intern</p>
+                    <p class="duration">May 2024 - July 2024</p>
+                    <ul>
+                        <li>Summer internship at Amazon as a Software Development Engineer (SDE) intern, where I worked on projects related to Generative AI and explored prompt engineering. 
+                            My primary project focused on issue resolution, leveraging NovaGenAi to automate the resolution of trouble tickets.</li>
+                    </ul>
+                    <a href="../documents/amazon_intern.pdf" class="btn" target="_blank">Read More</a>
+                </div>
+        
+                <!-- Cyber Security Experience -->
+                <div class="experience-box" id="cybergyan">
+                    <h3>Cyber Gyan</h3>
+                    <p class="role">Cybersecurity Intern</p>
+                    <p class="duration">July 2024 - September 2024</p>
+                    <ul>
+                        <li>Successfully completed the "Ethical Hacking and Penetration Testing" training and virtual internship under the Cyber Gyan Project by C-DAC, NOIDA.</li>
+                        <li>Gained hands-on experience in penetration testing, vulnerability assessment, and ethical hacking techniques.</li>
+                    </ul>
+                    <a href="../documents/cyberSecurity.pdf" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+        </section>  
+        
+        
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!📞</span>
+            </h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>If you have any questions, feel free to reach out to me through the form below.</p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> suchanahazra4@gmail.com</p>
+                        <p><strong>Phone:</strong> +123 456 7890</p>
+                    </div>
+                </div>
+                
+                <form action="https://formspree.io/f/movjllkj" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+            </div>
+        </section>
+        
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Suchana Hazra | All Rights Reserved</p>
+            </div>
+            <div class="footer-icon">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+            
+        </footer>
+
+        <!-- <div class="color-picker">
+            <div class="color-option" data-bg="#f5f5f5" data-text="#333"></div>
+            <div class="color-option" data-bg="#222" data-text="#fff"></div>
+            <div class="color-option" data-bg="#ff6b6b" data-text="#fff"></div>
+            <div class="color-option" data-bg="#6b8aff" data-text="#fff"></div>
+            <div class="color-option" data-bg="#4caf50" data-text="#fff"></div>
+            <div class="color-option" data-bg="#ff9800" data-text="#fff"></div>
+            <div class="color-option" data-bg="#9c27b0" data-text="#fff"></div>
+            <div class="color-option" data-bg="#ff9800" data-text="#fff"></div>
+        </div> -->
+
+        <!-- Floating Color Picker Container -->
+        <div class="color-picker-container">
+            <div class="color-picker-btn" id="colorPickerBtn"></div>
+            <div class="color-picker" id="colorPicker">
+                <div class="color-option" data-bg="#f5f5f5" data-text="#201c1c"></div> <!-- Light -->
+                <div class="color-option" data-bg="#ce0b66" data-text="#fff"></div> <!-- Dark -->
+                <div class="color-option" data-bg="#ff6b6b" data-text="#fff"></div>
+                <div class="color-option" data-bg="#6b8aff" data-text="#fff"></div>
+                <div class="color-option" data-bg="#4caf50" data-text="#fff"></div>
+                <div class="color-option" data-bg="#ff9800" data-text="#fff"></div>
+                <div class="color-option" data-bg="#9c27b0" data-text="#fff"></div>
+                <div class="color-option" data-bg="#cad439" data-text="#fff"></div>
+            </div>
+            </div>
+        </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    <script src="./script.js"></script>
+    <script src="./dropDownMenu.js"></script>    
+    <script src="Type&DeleteOp.js"></script>
+    <script src="education.js"></script>  
+    <script src="sendMail.js"></script>  
+    <script src="loading_page.js"></script>
+</body>        
+</html>
